@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bluekite — Earth &amp; Space Science for Students</title>
+  <meta name="description" content="Bluekite is a free Earth and space science site for students aged 10–16: planet profiles, moon phases explained, short lessons, a quick quiz and a glossary. No sign-up, no ads, no tracking.">
+  <meta name="theme-color" content="#0B1B3A">
+  <link rel="canonical" href="https://bluekite.space/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bluekite">
+  <meta property="og:title" content="Bluekite — Fly higher in science">
+  <meta property="og:description" content="Free, classroom-friendly Earth and space science for ages 10–16: the planets, moon phases, seasons, gravity and more.">
+  <meta property="og:url" content="https://bluekite.space/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bluekite — Fly higher in science">
+  <meta name="twitter:description" content="Free Earth and space science for students aged 10–16. No sign-up, no ads, no tracking.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="pl-shade" cx="35%" cy="32%" r="78%">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+        <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop offset="1" stop-color="#000814" stop-opacity=".45"/>
+      </radialGradient>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bluekite home">
+        <svg class="brand-mark" viewBox="0 0 30 36" aria-hidden="true">
+          <path d="M15 1 L28 12 L15 27 L2 12 Z" fill="#2F7DF6"/>
+          <path d="M15 1 L28 12 L15 12 Z" fill="#8EBBFF"/>
+          <path d="M15 1 L2 12 L15 12 Z" fill="#5A98F8"/>
+          <path d="M15 12 L15 27" stroke="#0B1B3A" stroke-opacity=".25" stroke-width="1"/>
+          <path d="M15 27 C 11 29.5, 19 31, 14.5 35" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Bluekite</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#planets">Planets</a></li>
+          <li><a href="#moon">Moon phases</a></li>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a class="btn btn-small" href="#quiz">Take the quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Earth &amp; space science · ages 10–16</p>
+          <h1 id="hero-title">Fly higher in science.</h1>
+          <p class="lede">Bluekite is a free place to explore the planets, the Moon and the big ideas that explain them — seasons, gravity, light-years and more. Short, clear and checked for accuracy, so you can learn something real in ten minutes.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#planets">Explore the planets</a>
+            <a class="btn btn-ghost" href="#quiz">Try the quiz</a>
+          </div>
+          <ul class="hero-points">
+            <li>No sign-up</li>
+            <li>No ads or tracking</li>
+            <li>Free for classrooms</li>
+          </ul>
+        </div>
+
+        <figure class="hero-figure">
+          <svg class="hero-art" viewBox="0 0 560 460" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title">A kite rising from hills through the clouds towards space, with the Moon, a space station and planets on their orbits</title>
+            <defs>
+              <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0B1B3A"/>
+                <stop offset=".42" stop-color="#18386E"/>
+                <stop offset=".68" stop-color="#4F8AE6"/>
+                <stop offset=".86" stop-color="#BCD6FB"/>
+                <stop offset="1" stop-color="#EAF3FF"/>
+              </linearGradient>
+              <radialGradient id="h-sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(150)">
+                <stop offset="0" stop-color="#FFD98A" stop-opacity=".9"/>
+                <stop offset="1" stop-color="#FFD98A" stop-opacity="0"/>
+              </radialGradient>
+              <pattern id="h-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                <path d="M28 0H0V28" fill="none" stroke="#FFFFFF" stroke-opacity=".07" stroke-width="1"/>
+              </pattern>
+              <clipPath id="h-clip"><rect width="560" height="460" rx="14"/></clipPath>
+            </defs>
+            <g clip-path="url(#h-clip)">
+              <rect width="560" height="460" fill="url(#h-sky)"/>
+              <rect width="560" height="300" fill="url(#h-grid)"/>
+
+              <g fill="#FFFFFF">
+                <circle cx="210" cy="30" r="1.4"/><circle cx="262" cy="64" r="1"/><circle cx="330" cy="26" r="1.6"/><circle cx="380" cy="58" r="1"/>
+                <circle cx="520" cy="30" r="1.3"/><circle cx="496" cy="150" r="1"/><circle cx="360" cy="140" r="1.2"/><circle cx="240" cy="150" r="1"/>
+                <circle cx="170" cy="190" r="1.1"/><circle cx="300" cy="100" r="1"/><circle cx="420" cy="170" r="1"/><circle cx="540" cy="92" r="1.1"/>
+                <circle cx="130" cy="150" r="1"/><circle cx="60" cy="210" r="1"/><circle cx="455" cy="22" r="1"/>
+              </g>
+
+              <circle cx="0" cy="0" r="150" fill="url(#h-sun)"/>
+              <circle cx="0" cy="0" r="54" fill="#FFC857"/>
+              <g fill="none" stroke="#FFFFFF" stroke-opacity=".28" stroke-dasharray="2 6">
+                <circle cx="0" cy="0" r="120"/>
+                <circle cx="0" cy="0" r="190"/>
+                <circle cx="0" cy="0" r="270"/>
+              </g>
+              <g>
+                <circle cx="98" cy="69" r="8" fill="#3E86E8"/>
+                <path d="M93 66 q3 -4 7 -1 q-1 4 -5 4 z" fill="#5DBB7A"/>
+                <circle cx="113" cy="60" r="2.2" fill="#E7E3D6"/>
+                <circle cx="178" cy="80" r="6" fill="#D0603E"/>
+                <g transform="translate(262 64)">
+                  <circle r="15" fill="#D9B98F"/>
+                  <path d="M-14 -4 H14 M-15 3 H15" stroke="#B98556" stroke-width="3"/>
+                  <ellipse cx="5" cy="7.5" rx="3.5" ry="2" fill="#C4553A"/>
+                </g>
+              </g>
+
+              <g transform="translate(452 96)">
+                <circle r="30" fill="#FFFFFF" fill-opacity=".06"/>
+                <circle r="24" fill="#1D3566"/>
+                <path d="M0 -24 A24 24 0 0 1 0 24 A11 24 0 0 0 0 -24 Z" fill="#F3EFE2"/>
+              </g>
+
+              <g transform="translate(392 214) rotate(-12)">
+                <rect x="-26" y="-7" width="18" height="14" fill="#8EBBFF" stroke="#FFFFFF" stroke-opacity=".6"/>
+                <rect x="8" y="-7" width="18" height="14" fill="#8EBBFF" stroke="#FFFFFF" stroke-opacity=".6"/>
+                <path d="M-8 0 H8" stroke="#FFFFFF" stroke-width="2"/>
+                <rect x="-4" y="-4" width="8" height="8" rx="2" fill="#FFFFFF"/>
+              </g>
+
+              <path d="M528 440 V70" stroke="#FFFFFF" stroke-opacity=".45" stroke-dasharray="3 5"/>
+              <g fill="#FFFFFF">
+                <circle cx="528" cy="96" r="4"/>
+                <circle cx="528" cy="214" r="4"/>
+                <circle cx="528" cy="262" r="4"/>
+              </g>
+              <circle cx="528" cy="338" r="4" fill="#0B1B3A"/>
+              <path d="M0 262 H560" stroke="#FFFFFF" stroke-opacity=".35" stroke-dasharray="1 6"/>
+
+              <g fill="#FFFFFF" fill-opacity=".85">
+                <ellipse cx="80" cy="330" rx="46" ry="12"/><ellipse cx="104" cy="320" rx="26" ry="12"/>
+                <ellipse cx="430" cy="312" rx="40" ry="10"/><ellipse cx="450" cy="303" rx="20" ry="10"/>
+              </g>
+
+              <path d="M-10 404 C 80 372, 150 394, 240 380 S 420 356, 570 380 V470 H-10 Z" fill="#EAF3FF"/>
+              <g fill="none" stroke="#9EC0F4" stroke-width="1.2">
+                <path d="M-10 420 C 80 390, 150 412, 240 398 S 420 374, 570 398"/>
+                <path d="M-10 436 C 80 408, 150 430, 240 416 S 420 392, 570 416"/>
+                <path d="M-10 452 C 80 426, 150 448, 240 434 S 420 410, 570 434"/>
+              </g>
+
+              <path d="M300 276 C 260 330, 200 380, 150 426" fill="none" stroke="#0B1B3A" stroke-opacity=".55" stroke-width="1.2"/>
+
+              <g class="kite">
+                <path d="M300 236 L328 266 L300 314 L272 266 Z" fill="#2F7DF6"/>
+                <path d="M300 236 L328 266 L300 266 Z" fill="#8EBBFF"/>
+                <path d="M300 236 L272 266 L300 266 Z" fill="#5A98F8"/>
+                <path d="M300 236 V314 M272 266 H328" stroke="#0B1B3A" stroke-opacity=".3"/>
+                <path d="M300 314 C 290 330, 316 340, 304 356 S 296 380, 312 392" fill="none" stroke="#FF6B4A" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M294 332 L300 336 L294 340 Z M312 350 L306 354 L312 358 Z M296 372 L302 376 L296 380 Z" fill="#FF6B4A"/>
+              </g>
+
+              <g fill="none" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round">
+                <path d="M516 20 H540 V44"/>
+              </g>
+            </g>
+          </svg>
+          <div class="hud hud-top" aria-hidden="true">
+            <span class="hud-label">Next stop</span>
+            <span class="hud-value">The Moon · 384,400 km</span>
+          </div>
+          <div class="hud hud-bottom" aria-hidden="true">
+            <span><b>Clouds</b> mostly &lt; 12 km</span>
+            <span><b>Space</b> 100 km</span>
+            <span><b>ISS</b> ~400 km</span>
+          </div>
+          <figcaption class="sr-only">Heights above Earth (not to scale): most weather and clouds sit below about 12 km, space is usually said to begin at 100 km, the International Space Station orbits at about 400 km, and the Moon is on average 384,400 km away.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="specs" aria-label="What you will find on Bluekite">
+      <div class="container">
+        <ul class="spec-list">
+          <li><span class="spec-k">Explore</span><span class="spec-v">8 planet profiles</span></li>
+          <li><span class="spec-k">Understand</span><span class="spec-v">The 8 phases of the Moon</span></li>
+          <li><span class="spec-k">Read</span><span class="spec-v">6 short lessons</span></li>
+          <li><span class="spec-k">Check</span><span class="spec-v">A 5-question quiz</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="planets" class="section" aria-labelledby="planets-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Explore the solar system</p>
+          <h2 id="planets-title">Eight planets, one Sun.</h2>
+          <p class="section-intro">Starting closest to the Sun and moving outwards. Tap <strong>More facts</strong> on any planet to see its size, the length of its year and how long sunlight takes to reach it.</p>
+        </div>
+
+        <div class="planet-grid">
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="24" fill="#A8A29A"/>
+                <g fill="#8C867F"><circle cx="52" cy="52" r="4"/><circle cx="68" cy="64" r="3"/><circle cx="57" cy="71" r="2.5"/><circle cx="69" cy="48" r="2"/><circle cx="46" cy="64" r="2"/></g>
+                <circle cx="60" cy="60" r="24" fill="url(#pl-shade)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 1</p>
+              <h3>Mercury</h3>
+              <p class="planet-type">Rocky planet</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>58 million km</dd></div>
+                <div><dt>Length of day</dt><dd>176 Earth days</dd></div>
+                <div><dt>Moons</dt><dd>0</dd></div>
+              </dl>
+              <p class="fun">With almost no atmosphere to hold heat, Mercury swings from about 430&nbsp;°C in the day to about −180&nbsp;°C at night.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-mercury">More facts</button>
+              <div class="planet-more" id="more-mercury" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>4,879 km</dd></div>
+                  <div><dt>Year</dt><dd>88 Earth days</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 3 minutes</dd></div>
+                </dl>
+                <p>One Mercury day (sunrise to sunrise) lasts exactly two of its 88-day years.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><clipPath id="clip-venus"><circle cx="60" cy="60" r="30"/></clipPath></defs>
+                <circle cx="60" cy="60" r="30" fill="#E8C98A"/>
+                <g clip-path="url(#clip-venus)" fill="none" stroke="#D6AE66" stroke-width="5" stroke-linecap="round" opacity=".8">
+                  <path d="M26 48 C 44 42, 62 54, 94 46"/><path d="M26 64 C 48 58, 70 70, 94 62"/><path d="M26 78 C 44 74, 64 84, 94 76"/>
+                </g>
+                <circle cx="60" cy="60" r="30" fill="url(#pl-shade)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 2</p>
+              <h3>Venus</h3>
+              <p class="planet-type">Rocky planet</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>108 million km</dd></div>
+                <div><dt>Length of day</dt><dd>117 Earth days</dd></div>
+                <div><dt>Moons</dt><dd>0</dd></div>
+              </dl>
+              <p class="fun">The hottest planet. Thick carbon dioxide clouds trap heat, so its surface is about 465&nbsp;°C — hotter than Mercury.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-venus">More facts</button>
+              <div class="planet-more" id="more-venus" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>12,104 km</dd></div>
+                  <div><dt>Year</dt><dd>225 Earth days</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 6 minutes</dd></div>
+                </dl>
+                <p>Venus spins backwards compared with most planets, so the Sun rises in the west. One full spin takes 243 Earth days — longer than its year.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><clipPath id="clip-earth"><circle cx="60" cy="60" r="31"/></clipPath></defs>
+                <circle cx="60" cy="60" r="31" fill="#3E86E8"/>
+                <g clip-path="url(#clip-earth)">
+                  <path d="M38 40 C 46 32, 60 36, 58 46 C 56 54, 46 52, 44 60 C 42 68, 32 64, 32 54 C 32 48, 34 44, 38 40 Z" fill="#5DBB7A"/>
+                  <path d="M66 58 C 74 52, 86 58, 84 68 C 82 78, 72 84, 66 78 C 62 72, 60 62, 66 58 Z" fill="#5DBB7A"/>
+                  <path d="M40 30 C 52 26, 66 28, 78 34" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+                  <path d="M46 84 C 56 88, 66 88, 76 84" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+                </g>
+                <circle cx="60" cy="60" r="31" fill="url(#pl-shade)"/>
+                <circle cx="100" cy="30" r="5" fill="#E7E3D6"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 3</p>
+              <h3>Earth</h3>
+              <p class="planet-type">Rocky planet</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>150 million km</dd></div>
+                <div><dt>Length of day</dt><dd>24 hours</dd></div>
+                <div><dt>Moons</dt><dd>1</dd></div>
+              </dl>
+              <p class="fun">The only world we know of with liquid water oceans on its surface — and the only one known to have life.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-earth">More facts</button>
+              <div class="planet-more" id="more-earth" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>12,756 km</dd></div>
+                  <div><dt>Year</dt><dd>365.25 days</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 8 min 20 s</dd></div>
+                </dl>
+                <p>Earth's axis is tilted by about 23.5°. That tilt, not our distance from the Sun, is what gives us seasons.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><clipPath id="clip-mars"><circle cx="60" cy="60" r="25"/></clipPath></defs>
+                <circle cx="60" cy="60" r="25" fill="#D0603E"/>
+                <g clip-path="url(#clip-mars)">
+                  <ellipse cx="60" cy="36" rx="12" ry="4" fill="#F4EDE6"/>
+                  <path d="M40 58 C 48 54, 56 62, 66 58 S 78 60, 84 56" fill="none" stroke="#A94A30" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="52" cy="70" r="4" fill="#B5543A"/>
+                </g>
+                <circle cx="60" cy="60" r="25" fill="url(#pl-shade)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 4</p>
+              <h3>Mars</h3>
+              <p class="planet-type">Rocky planet</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>228 million km</dd></div>
+                <div><dt>Length of day</dt><dd>24 h 40 min</dd></div>
+                <div><dt>Moons</dt><dd>2</dd></div>
+              </dl>
+              <p class="fun">Home to Olympus Mons, the largest volcano in the solar system — roughly 2.5 times the height of Mount Everest.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-mars">More facts</button>
+              <div class="planet-more" id="more-mars" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>6,792 km</dd></div>
+                  <div><dt>Year</dt><dd>687 Earth days</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 13 minutes</dd></div>
+                </dl>
+                <p>Mars looks red because its dust contains iron oxide — rust. Its two small moons are called Phobos and Deimos.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><clipPath id="clip-jupiter"><circle cx="60" cy="60" r="44"/></clipPath></defs>
+                <circle cx="60" cy="60" r="44" fill="#E3CBA6"/>
+                <g clip-path="url(#clip-jupiter)">
+                  <rect x="10" y="30" width="100" height="7" fill="#C28E5C"/>
+                  <rect x="10" y="44" width="100" height="5" fill="#D8B386"/>
+                  <rect x="10" y="56" width="100" height="9" fill="#B97E4E"/>
+                  <rect x="10" y="74" width="100" height="6" fill="#C9996A"/>
+                  <rect x="10" y="88" width="100" height="5" fill="#D8B386"/>
+                  <ellipse cx="76" cy="70" rx="9" ry="5.5" fill="#C4553A"/>
+                </g>
+                <circle cx="60" cy="60" r="44" fill="url(#pl-shade)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 5</p>
+              <h3>Jupiter</h3>
+              <p class="planet-type">Gas giant</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>778 million km</dd></div>
+                <div><dt>Length of day</dt><dd>about 10 hours</dd></div>
+                <div><dt>Moons</dt><dd>95+</dd></div>
+              </dl>
+              <p class="fun">Its Great Red Spot is a storm wider than the whole Earth, and astronomers have watched it for more than 150 years.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-jupiter">More facts</button>
+              <div class="planet-more" id="more-jupiter" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>142,984 km</dd></div>
+                  <div><dt>Year</dt><dd>11.9 Earth years</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 43 minutes</dd></div>
+                </dl>
+                <p>Jupiter has more than twice the mass of all the other planets put together.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <g transform="rotate(-18 60 60)">
+                  <ellipse cx="60" cy="60" rx="54" ry="12" fill="none" stroke="#CDB68A" stroke-width="7" opacity=".9"/>
+                </g>
+                <circle cx="60" cy="60" r="30" fill="#E6CF9E"/>
+                <path d="M31 52 H89 M30 64 H90" stroke="#D1B37A" stroke-width="4"/>
+                <circle cx="60" cy="60" r="30" fill="url(#pl-shade)"/>
+                <g transform="rotate(-18 60 60)">
+                  <path d="M6 60 A54 12 0 0 0 114 60" fill="none" stroke="#DCC79C" stroke-width="7"/>
+                  <path d="M6 60 A54 12 0 0 0 114 60" fill="none" stroke="#A8915F" stroke-width="1" opacity=".6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 6</p>
+              <h3>Saturn</h3>
+              <p class="planet-type">Gas giant</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>1.43 billion km</dd></div>
+                <div><dt>Length of day</dt><dd>about 10.7 hours</dd></div>
+                <div><dt>Moons</dt><dd>270+</dd></div>
+              </dl>
+              <p class="fun">Saturn is so light for its size that, on average, it is less dense than water.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-saturn">More facts</button>
+              <div class="planet-more" id="more-saturn" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>120,536 km</dd></div>
+                  <div><dt>Year</dt><dd>29.4 Earth years</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 1 h 20 min</dd></div>
+                </dl>
+                <p>Its rings are made mostly of chunks of ice, from tiny grains to boulders bigger than a house.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <ellipse cx="60" cy="60" rx="9" ry="47" fill="none" stroke="#CDEFF2" stroke-width="2" opacity=".55"/>
+                <circle cx="60" cy="60" r="28" fill="#9DDCE3"/>
+                <circle cx="60" cy="60" r="28" fill="url(#pl-shade)"/>
+                <path d="M60 107 A9 47 0 0 1 60 13" fill="none" stroke="#DDF5F7" stroke-width="2" opacity=".8" transform="rotate(0)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 7</p>
+              <h3>Uranus</h3>
+              <p class="planet-type">Ice giant</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>2.87 billion km</dd></div>
+                <div><dt>Length of day</dt><dd>about 17 hours</dd></div>
+                <div><dt>Moons</dt><dd>28+</dd></div>
+              </dl>
+              <p class="fun">Uranus is tipped over by about 98°, so it seems to roll around the Sun on its side.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-uranus">More facts</button>
+              <div class="planet-more" id="more-uranus" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>51,118 km</dd></div>
+                  <div><dt>Year</dt><dd>84 Earth years</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 2 h 40 min</dd></div>
+                </dl>
+                <p>Because of that tilt, each pole gets around 42 years of sunlight followed by around 42 years of darkness.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="planet">
+            <div class="planet-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><clipPath id="clip-neptune"><circle cx="60" cy="60" r="28"/></clipPath></defs>
+                <circle cx="60" cy="60" r="28" fill="#3E6FE0"/>
+                <g clip-path="url(#clip-neptune)">
+                  <ellipse cx="50" cy="66" rx="7" ry="4" fill="#2A4DB0"/>
+                  <path d="M58 52 C 64 50, 70 50, 76 52" stroke="#E8F0FF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".85"/>
+                  <path d="M34 48 C 46 44, 70 44, 86 48" stroke="#5C88EA" stroke-width="3" fill="none"/>
+                </g>
+                <circle cx="60" cy="60" r="28" fill="url(#pl-shade)"/>
+              </svg>
+            </div>
+            <div class="planet-body">
+              <p class="planet-order">Planet 8</p>
+              <h3>Neptune</h3>
+              <p class="planet-type">Ice giant</p>
+              <dl class="facts">
+                <div><dt>From the Sun</dt><dd>4.5 billion km</dd></div>
+                <div><dt>Length of day</dt><dd>about 16 hours</dd></div>
+                <div><dt>Moons</dt><dd>16</dd></div>
+              </dl>
+              <p class="fun">Neptune has the fastest winds in the solar system — up to about 2,000&nbsp;km/h.</p>
+              <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-neptune">More facts</button>
+              <div class="planet-more" id="more-neptune" hidden>
+                <dl class="facts">
+                  <div><dt>Diameter</dt><dd>49,528 km</dd></div>
+                  <div><dt>Year</dt><dd>165 Earth years</dd></div>
+                  <div><dt>Sunlight arrives in</dt><dd>about 4 h 10 min</dd></div>
+                </dl>
+                <p>Neptune was the first planet found using maths: astronomers predicted where it should be, then spotted it in 1846.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="fine-print">Distances are averages. “Length of day” means sunrise to sunrise. Moon counts are as of 2025 — astronomers keep discovering small moons around the giant planets. Planets are not drawn to scale.</p>
+      </div>
+    </section>
+
+    <section id="moon" class="section dark" aria-labelledby="moon-title">
+      <div class="container">
+        <div class="moon-grid">
+          <div class="section-head light">
+            <p class="eyebrow">Moon phases explained</p>
+            <h2 id="moon-title">Half the Moon is always lit. We just see it from different angles.</h2>
+            <p class="section-intro">The Sun always lights the half of the Moon facing it. As the Moon travels around Earth, we see more or less of that sunlit half. One full cycle, from new moon back to new moon, takes about 29.5 days.</p>
+            <ul class="moon-notes">
+              <li><strong>Waxing</strong> means the lit part we can see is growing; <strong>waning</strong> means it is shrinking.</li>
+              <li>Phases are <em>not</em> caused by Earth's shadow. That only happens during a lunar eclipse.</li>
+              <li>Shapes below are as seen from the Northern Hemisphere. In the Southern Hemisphere, they appear flipped left to right.</li>
+            </ul>
+          </div>
+
+          <figure class="orbit-figure">
+            <svg viewBox="0 0 400 360" role="img" aria-labelledby="orbit-title">
+              <title id="orbit-title">Diagram of the Moon at eight points in its orbit around Earth, with sunlight coming from the left. The side of the Moon facing the Sun is always lit.</title>
+
+              <g stroke="#FFC857" stroke-width="2" stroke-linecap="round">
+                <path d="M8 120 H40 M8 180 H40 M8 240 H40"/>
+              </g>
+              <g fill="#FFC857">
+                <path d="M40 115 L50 120 L40 125 Z"/><path d="M40 175 L50 180 L40 185 Z"/><path d="M40 235 L50 240 L40 245 Z"/>
+              </g>
+              <text x="8" y="100" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#FFD98A">Sunlight</text>
+
+              <circle cx="220" cy="180" r="120" fill="none" stroke="#8EBBFF" stroke-opacity=".45" stroke-dasharray="3 6"/>
+              <path d="M272.4 288.2 L263.2 297.4 L259.4 288.2 Z" fill="#8EBBFF"/>
+
+              <circle cx="220" cy="180" r="24" fill="#16305E"/>
+              <path d="M220 156 A24 24 0 0 0 220 204 Z" fill="#3E86E8"/>
+              <text x="220" y="224" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#DCE7FA">Earth</text>
+
+              <g>
+                <g transform="translate(100 180)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(135.15 264.85)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(220 300)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(304.85 264.85)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(340 180)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(304.85 95.15)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(220 60)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+                <g transform="translate(135.15 95.15)"><circle r="13" fill="#23375F"/><path d="M0 -13 A13 13 0 0 0 0 13 Z" fill="#F3EFE2"/></g>
+              </g>
+              <g font-family="Sora, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+                <text x="72" y="185">1</text>
+                <text x="112" y="300">2</text>
+                <text x="220" y="336">3</text>
+                <text x="328" y="300">4</text>
+                <text x="368" y="185">5</text>
+                <text x="328" y="72">6</text>
+                <text x="220" y="36">7</text>
+                <text x="112" y="72">8</text>
+              </g>
+            </svg>
+            <figcaption>View from above Earth's North Pole. Numbers match the phases below.</figcaption>
+          </figure>
+        </div>
+
+        <ol class="phase-strip">
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/></svg>
+            <span class="phase-n">1</span><span class="phase-name">New moon</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 A15 30 0 0 0 0 -30 Z" fill="#F3EFE2"/></svg>
+            <span class="phase-n">2</span><span class="phase-name">Waxing crescent</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 Z" fill="#F3EFE2"/></svg>
+            <span class="phase-n">3</span><span class="phase-name">First quarter</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 A15 30 0 0 1 0 -30 Z" fill="#F3EFE2"/></svg>
+            <span class="phase-n">4</span><span class="phase-name">Waxing gibbous</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#F3EFE2" stroke="#FFFFFF" stroke-opacity=".4"/></svg>
+            <span class="phase-n">5</span><span class="phase-name">Full moon</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 A15 30 0 0 1 0 -30 Z" fill="#F3EFE2" transform="scale(-1 1)"/></svg>
+            <span class="phase-n">6</span><span class="phase-name">Waning gibbous</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 Z" fill="#F3EFE2" transform="scale(-1 1)"/></svg>
+            <span class="phase-n">7</span><span class="phase-name">Third quarter</span>
+          </li>
+          <li>
+            <svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="30" fill="#1B2A48" stroke="#3A4E78"/><path d="M0 -30 A30 30 0 0 1 0 30 A15 30 0 0 0 0 -30 Z" fill="#F3EFE2" transform="scale(-1 1)"/></svg>
+            <span class="phase-n">8</span><span class="phase-name">Waning crescent</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="lessons" class="section" aria-labelledby="lessons-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Short lessons</p>
+          <h2 id="lessons-title">Big questions, short answers.</h2>
+          <p class="section-intro">Each lesson explains one idea in plain words, with a quick experiment you can try at home or in class.</p>
+        </div>
+
+        <div class="lesson-grid">
+          <article class="card lesson">
+            <p class="lesson-meta"><span>5 min read</span><span>Ages 10+</span></p>
+            <h3>Why do we have seasons?</h3>
+            <p>Earth's axis is tilted by about 23.5°. As Earth travels around the Sun, first one hemisphere and then the other leans towards the Sun, getting more direct sunlight and longer days — that's summer. It isn't about distance: Earth is actually closest to the Sun in early January, during northern winter.</p>
+            <p class="try"><strong>Try it:</strong> shine a torch straight down on paper, then at a slant. Which patch of light is brighter?</p>
+          </article>
+
+          <article class="card lesson">
+            <p class="lesson-meta"><span>6 min read</span><span>Ages 11+</span></p>
+            <h3>How gravity keeps orbits</h3>
+            <p>Imagine throwing a ball so fast that, as it falls, the ground curves away beneath it just as quickly. That's an orbit: the Moon and planets are always falling, but their sideways speed means they never hit what they're orbiting. Isaac Newton explained this with a thought experiment about a cannon on a very tall mountain.</p>
+            <p class="try"><strong>Try it:</strong> swing a soft ball on a string in a circle. The string plays the part of gravity.</p>
+          </article>
+
+          <article class="card lesson">
+            <p class="lesson-meta"><span>4 min read</span><span>Ages 10+</span></p>
+            <h3>What is a light-year?</h3>
+            <p>A light-year is a distance, not a time: how far light travels in one year, about 9.46 trillion km. Light is the fastest thing there is, yet it still takes over four years to reach us from Proxima Centauri, the nearest star after the Sun. When you look at the stars, you are seeing light that left them long ago.</p>
+            <p class="try"><strong>Try it:</strong> sunlight takes about 8 minutes to reach Earth. How far away is the Sun in “light-minutes”?</p>
+          </article>
+
+          <article class="card lesson">
+            <p class="lesson-meta"><span>5 min read</span><span>Ages 10+</span></p>
+            <h3>What causes the Moon's phases?</h3>
+            <p>The Sun always lights half of the Moon. As the Moon orbits Earth, we see different amounts of that lit half — none at new moon, all of it at full moon. The whole cycle takes about 29.5 days, and it has nothing to do with Earth's shadow.</p>
+            <p class="try"><strong>Try it:</strong> in a dark room, hold a ball at arm's length near a lamp and turn slowly on the spot.</p>
+          </article>
+
+          <article class="card lesson">
+            <p class="lesson-meta"><span>3 min read</span><span>Ages 10+</span></p>
+            <h3>Why is Mars red?</h3>
+            <p>Mars's surface is covered in dust and rocks rich in iron oxide — the same compound that makes rust. Fine dust blown high into its thin atmosphere gives the daytime sky a butterscotch colour. Strangely, sunsets on Mars look bluish.</p>
+            <p class="try"><strong>Try it:</strong> leave a steel wool pad damp for a few days (with an adult's help) and watch it turn reddish-brown.</p>
+          </article>
+
+          <article class="card lesson">
+            <p class="lesson-meta"><span>5 min read</span><span>Ages 12+</span></p>
+            <h3>What makes the tides?</h3>
+            <p>The Moon's gravity pulls on Earth's oceans, raising a bulge of water on the side facing the Moon and another on the opposite side. As Earth spins through these bulges, most coasts get two high tides roughly every 24 hours and 50 minutes. At new and full moon, the Sun's pull lines up with the Moon's, giving extra-large “spring tides”.</p>
+            <p class="try"><strong>Try it:</strong> check a local tide table and see how high tide moves about 50 minutes later each day.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section" aria-labelledby="quiz-title">
+      <div class="container quiz-wrap">
+        <div class="section-head">
+          <p class="eyebrow">Quick quiz</p>
+          <h2 id="quiz-title">Five questions. How high can you fly?</h2>
+          <p class="section-intro">Everything you need is on this page. Your answers are checked right here in your browser — nothing is saved or sent anywhere.</p>
+        </div>
+
+        <form class="card quiz" id="quiz-form" novalidate>
+          <fieldset class="q" data-answer="b">
+            <legend><span class="q-num">1</span> Which planet is closest to the Sun?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q1" value="a"><span>Venus</span></label>
+              <label class="opt"><input type="radio" name="q1" value="b"><span>Mercury</span></label>
+              <label class="opt"><input type="radio" name="q1" value="c"><span>Mars</span></label>
+              <label class="opt"><input type="radio" name="q1" value="d"><span>Earth</span></label>
+            </div>
+            <p class="q-explain" hidden>Mercury orbits closest, at an average of about 58 million km from the Sun.</p>
+          </fieldset>
+
+          <fieldset class="q" data-answer="c">
+            <legend><span class="q-num">2</span> What causes Earth's seasons?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q2" value="a"><span>Earth moving closer to and further from the Sun</span></label>
+              <label class="opt"><input type="radio" name="q2" value="b"><span>The Moon's gravity</span></label>
+              <label class="opt"><input type="radio" name="q2" value="c"><span>The tilt of Earth's axis</span></label>
+              <label class="opt"><input type="radio" name="q2" value="d"><span>Changes in the Sun's brightness</span></label>
+            </div>
+            <p class="q-explain" hidden>Earth's axis is tilted about 23.5°, so each hemisphere takes turns leaning towards the Sun. Earth is actually closest to the Sun in January.</p>
+          </fieldset>
+
+          <fieldset class="q" data-answer="a">
+            <legend><span class="q-num">3</span> A light-year is a measure of…</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q3" value="a"><span>Distance</span></label>
+              <label class="opt"><input type="radio" name="q3" value="b"><span>Time</span></label>
+              <label class="opt"><input type="radio" name="q3" value="c"><span>Brightness</span></label>
+              <label class="opt"><input type="radio" name="q3" value="d"><span>Speed</span></label>
+            </div>
+            <p class="q-explain" hidden>It's the distance light travels in a year — about 9.46 trillion km.</p>
+          </fieldset>
+
+          <fieldset class="q" data-answer="c">
+            <legend><span class="q-num">4</span> About how long does the Moon take to go through all its phases?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q4" value="a"><span>24 hours</span></label>
+              <label class="opt"><input type="radio" name="q4" value="b"><span>7 days</span></label>
+              <label class="opt"><input type="radio" name="q4" value="c"><span>29.5 days</span></label>
+              <label class="opt"><input type="radio" name="q4" value="d"><span>365 days</span></label>
+            </div>
+            <p class="q-explain" hidden>From one new moon to the next takes about 29.5 days — roughly a month.</p>
+          </fieldset>
+
+          <fieldset class="q" data-answer="d">
+            <legend><span class="q-num">5</span> Which is the largest planet in our solar system?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q5" value="a"><span>Saturn</span></label>
+              <label class="opt"><input type="radio" name="q5" value="b"><span>Neptune</span></label>
+              <label class="opt"><input type="radio" name="q5" value="c"><span>Earth</span></label>
+              <label class="opt"><input type="radio" name="q5" value="d"><span>Jupiter</span></label>
+            </div>
+            <p class="q-explain" hidden>Jupiter is about 143,000 km across — more than 11 times as wide as Earth.</p>
+          </fieldset>
+
+          <div class="quiz-actions">
+            <button class="btn" type="submit">Check my answers</button>
+            <button class="btn btn-ghost" type="reset" id="quiz-reset">Start again</button>
+          </div>
+          <p class="quiz-result" id="quiz-result" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="glossary" class="section" aria-labelledby="glossary-title">
+      <div class="container">
+        <div class="glossary-head">
+          <div class="section-head">
+            <p class="eyebrow">Glossary</p>
+            <h2 id="glossary-title">Words worth knowing.</h2>
+            <p class="section-intro">Space science has its own vocabulary. Here are the terms used on this site, in plain language.</p>
+          </div>
+          <div class="field glossary-search">
+            <label for="g-filter">Find a word</label>
+            <input id="g-filter" type="search" placeholder="e.g. orbit" autocomplete="off">
+          </div>
+        </div>
+
+        <dl class="glossary" id="glossary-list">
+          <div class="g-item"><dt>Aphelion</dt><dd>The point in an orbit where a planet is farthest from the Sun. Earth reaches aphelion in early July, about 152 million km away.</dd></div>
+          <div class="g-item"><dt>Asteroid</dt><dd>A small rocky or metallic body orbiting the Sun. Most are found in the asteroid belt between Mars and Jupiter.</dd></div>
+          <div class="g-item"><dt>Astronomical unit (AU)</dt><dd>The average distance between Earth and the Sun, about 150 million km. Useful for measuring distances within the solar system.</dd></div>
+          <div class="g-item"><dt>Axis</dt><dd>An imaginary line through a planet's centre that it spins around. Earth's axis is tilted about 23.5°.</dd></div>
+          <div class="g-item"><dt>Comet</dt><dd>A lump of ice, dust and rock. Near the Sun its ice turns to gas, forming a glowing cloud and one or more tails.</dd></div>
+          <div class="g-item"><dt>Dwarf planet</dt><dd>A round body that orbits the Sun but has not cleared other objects from its path. Pluto and Ceres are examples.</dd></div>
+          <div class="g-item"><dt>Eclipse</dt><dd>When one object passes into the shadow of another. In a lunar eclipse the Moon moves through Earth's shadow; in a solar eclipse the Moon blocks the Sun from part of Earth.</dd></div>
+          <div class="g-item"><dt>Gravity</dt><dd>The force that pulls objects with mass towards each other. It keeps your feet on the ground and the Moon in orbit.</dd></div>
+          <div class="g-item"><dt>Light-year</dt><dd>The distance light travels in one year — about 9.46 trillion km. It measures distance, not time.</dd></div>
+          <div class="g-item"><dt>Orbit</dt><dd>The curved path one object follows around another because of gravity, like Earth around the Sun.</dd></div>
+          <div class="g-item"><dt>Perihelion</dt><dd>The point in an orbit where a planet is closest to the Sun. Earth reaches perihelion in early January, about 147 million km away.</dd></div>
+          <div class="g-item"><dt>Satellite</dt><dd>Any object that orbits a planet. The Moon is a natural satellite; the International Space Station is an artificial one.</dd></div>
+          <div class="g-item"><dt>Solar system</dt><dd>The Sun and everything held by its gravity: eight planets, dwarf planets, moons, asteroids and comets.</dd></div>
+          <div class="g-item"><dt>Terminator</dt><dd>The line between day and night on a planet or moon. On the Moon, it's the edge between the lit and dark parts.</dd></div>
+        </dl>
+        <p class="g-empty" id="g-empty" hidden>No matching words. Try a shorter search, or <a href="#contact">suggest a new term</a>.</p>
+      </div>
+    </section>
+
+    <section id="teachers" class="section teachers" aria-labelledby="teachers-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container teachers-grid">
+        <div>
+          <p class="eyebrow">For teachers</p>
+          <h2 id="teachers-title">Free to use in class. Nothing to sign up for.</h2>
+          <p class="section-intro">Bluekite has no accounts, no adverts and no tracking, so you can share the link with a class without collecting anyone's data. Use it on a projector, on student devices or on paper.</p>
+          <ul class="ticks teacher-ideas">
+            <li><strong>Starter:</strong> show one planet card and ask students to predict its facts before revealing them.</li>
+            <li><strong>Hands-on:</strong> model moon phases with a lamp and a ball, then match them to the diagram.</li>
+            <li><strong>Exit ticket:</strong> the five-question quiz takes about five minutes.</li>
+            <li><strong>Vocabulary:</strong> use the glossary for key terms before a unit on space.</li>
+          </ul>
+        </div>
+
+        <div class="card print-card">
+          <h3>Printable fact sheets</h3>
+          <p>Print a clean, ink-friendly version of a section — perfect for handouts, display boards or homework.</p>
+          <div class="print-actions">
+            <button class="btn btn-block" type="button" data-print="planets">Print planet fact sheet</button>
+            <button class="btn btn-ghost btn-block" type="button" data-print="glossary">Print glossary</button>
+            <button class="btn btn-ghost btn-block" type="button" data-print="lessons">Print lessons</button>
+          </div>
+          <p class="print-note">Opens your browser's print dialog. Choose “Save as PDF” to keep a digital copy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Questions, ideas or a fact to fix?</h2>
+          <p class="section-intro">We check every fact on Bluekite, but science keeps moving. If you spot something out of date, have a question, or want a topic covered, let us know.</p>
+
+          <div class="contact-card">
+            <h3>Students: a quick note</h3>
+            <p>If you're under 13, please ask a parent, carer or teacher before sending us your email address. You don't need to tell us your full name.</p>
+            <p class="contact-mail">Or email us: <a href="mailto:hello@bluekite.space">hello@bluekite.space</a></p>
+          </div>
+        </div>
+
+        <form class="card brief-form" id="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">First name <span class="opt-label">(optional)</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name">
+            </div>
+            <div class="field">
+              <label for="f-role">I am a…</label>
+              <select id="f-role" name="role">
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Parent or carer</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email for our reply</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-topic">What's it about?</label>
+            <select id="f-topic" name="topic">
+              <option>A science question</option>
+              <option>Suggest a topic</option>
+              <option>Report a mistake</option>
+              <option>Using Bluekite in class</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Your message</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="E.g. Could you add a lesson about black holes?" required></textarea>
+          </div>
+          <button class="btn btn-block" type="submit">Send message</button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Bluekite home">
+          <svg class="brand-mark" viewBox="0 0 30 36" aria-hidden="true">
+            <path d="M15 1 L28 12 L15 27 L2 12 Z" fill="#2F7DF6"/>
+            <path d="M15 1 L28 12 L15 12 Z" fill="#8EBBFF"/>
+            <path d="M15 1 L2 12 L15 12 Z" fill="#5A98F8"/>
+            <path d="M15 27 C 11 29.5, 19 31, 14.5 35" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name">Bluekite</span>
+        </a>
+        <p>Free Earth and space science for curious students aged 10–16. No accounts, no ads, no tracking.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h2 class="footer-h">Learn</h2>
+        <ul>
+          <li><a href="#planets">Planets</a></li>
+          <li><a href="#moon">Moon phases</a></li>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+        </ul>
+      </nav>
+      <div class="footer-nav">
+        <h2 class="footer-h">Bluekite</h2>
+        <ul>
+          <li><a href="#teachers">For teachers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="mailto:hello@bluekite.space">hello@bluekite.space</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© 2026 Bluekite. Independent and not affiliated with any space agency.</p>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
